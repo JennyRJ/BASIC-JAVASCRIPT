@@ -130,3 +130,130 @@ function lessThanOrEqual(marks) {
 }
 
 console.log(lessThanOrEqual(300));
+//logical && and ||
+function testAndLogic(age) {
+    if (age >= 20 && age <= 35) {
+        return "You are a youth";
+    }
+    return "Not identified";
+}
+console.log(testAndLogic(24));
+
+function testOrLogic(marks) {
+    if (marks >= 400 || marks <= 500) {
+        return "You are a national school material";
+    }
+    return "You are a provisional school material";
+}
+console.log(testOrLogic(450));
+
+function testElse(val) {
+    if (val > 10) {
+        return "Over 10";
+    } else return "Under 10";
+}
+console.log(testElse(5));
+
+function testElseIf(val) {
+    if (val > 10) {
+        return "More than 10";
+    } else if (val < 5) {
+        return "Less than 5";
+    } else {
+        return "Between 5 and 10";
+    }
+}
+console.log(testElseIf(6));
+//chained if else statement
+function chainedIfElse(num) {
+    if (num < 5) {
+        return "Tiny";
+    } else if (num < 10) {
+        return "Small";
+    } else if (num < 15) {
+        return "Medium";
+    } else if (num < 20) {
+        return "Large";
+    } else if (num >= 20) {
+        return "Huge";
+    }
+    return "Change Me";
+}
+console.log(chainedIfElse(7));
+var names = [
+    "Hole-in-one!",
+    "Birdie",
+    "Eagle",
+    "Par",
+    "Bogey",
+    "Double Bogey",
+    "Go home",
+];
+
+function golfScore(par, strokes) {
+    if (strokes == 1) {
+        return names[0];
+    } else if (strokes <= par - 2) {
+        return names[1];
+    } else if (strokes == par - 1) {
+        return names[2];
+    } else if (strokes == par) {
+        return names[3];
+    } else if (strokes == par + 1) {
+        return names[4];
+    } else if (strokes == par + 2) {
+        return names[5];
+    } else if (strokes == par + 3) {
+        return names[6];
+    }
+}
+console.log(golfScore(5, 8));
+//Switch statements
+function caseInSwitch(val) {
+    var answers = "";
+
+    switch (val) {
+        case 1:
+            answer = "apha";
+            break;
+        case 2:
+            answer = "Beta";
+            break;
+        case 3:
+            answer = "gamma";
+            break;
+        case 4:
+            answer = "delta";
+    }
+    return answer;
+}
+console.log(caseInSwitch(2));
+
+function caseInSwitch(val) {
+    var answers = "";
+
+    switch (val) {
+        case "a":
+            answer = "apple";
+            break;
+        case "b":
+            answer = "orange";
+            break;
+        case "c":
+            answer = "melon";
+            break;
+        case "d":
+            answer = "mango";
+            break;
+        default:
+            answer = "stuff";
+            break;
+    }
+    return answer;
+}
+console.log(caseInSwitch("a"));
+
+function isLess(a, b) {
+    return a < b;
+}
+console.log(isLess(10, 15));
