@@ -1,4 +1,4 @@
-/*console.log("Hello World!");
+console.log("Hello World!");
 
 //Data type
 var a;
@@ -46,7 +46,7 @@ function jayR() {
     var clothes = "Dungaree";
     console.log(clothes);
 }
-jayR();*/
+jayR();
 
 function nextInLine(arr, item) {
     arr.push(item);
@@ -257,3 +257,41 @@ function isLess(a, b) {
     return a < b;
 }
 console.log(isLess(10, 15));
+//objects
+
+var myObject = {
+    name: "Lexie",
+    parents: 2,
+};
+var nameValue = myObject.name;
+var parentsValue = myObject.parents;
+
+console.log(myObject.name);
+console.log(myObject.parents);
+//updating object properties
+var ourDog = {
+    name: "camper",
+    legs: 4,
+    tails: 1,
+    friends: ["Everything"],
+};
+
+ourDog["bark"] = "woof!";
+ourDog.name = "Happy camper";
+ourDog.friends = ["Freecode campers"];
+console.log(ourDog.name);
+console.log(ourDog.friends);
+console.log(ourDog);
+//delete properties from objects
+var ourDog = {
+    name: "camper",
+    legs: 4,
+    tails: 1,
+    friends: ["Everything"],
+};
+
+ourDog["bark"] = "woof!";
+ourDog.name = "Happy camper";
+ourDog.friends = ["Freecode campers"];
+delete ourDog.legs;
+console.log(ourDog);
